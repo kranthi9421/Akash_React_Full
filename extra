@@ -1,0 +1,280 @@
+JavaScript (2days)
+--------------------------
+NPM
+React - 3
+React-Hooks -1
+React-Redux -2
+React-GraphQl-Apollo-1
+React-JWT-1
+GitHub
+MockApi
+Production Ready
+(Tomcat,apcha,xamp,NodeJs(MERN))
+(Basic) React-Native- 1
+Testing(Jest,Engym-SAction,Reducer)
+Docker
+React-Redux-Saga-1
+Nginx
+----------Not------------
+Build API (GraphQl,Rest,JWT)
+------------------------
+
+Next Topic
+
+
+
+
+////////////////
+https://github.com/Aakashdeveloper 
+https://code.visualstudio.com/
+ https://nodejs.org/en/
+
+
+
+/////////////JSON/////////
+JavaScript Script Object Notation
+[
+    {
+        name:'John',
+        class:'React'
+    },
+    {
+        name:'Anjali',
+        class:'Angular
+    }
+]
+
+///////////********///////////
+Step to create Package.Json
+//////////********////////////
+**Node Js installed in system
+> navigate to the folder where you want to create app using cmd/terminal
+> npm init
+> Answer all question
+> Type "yes"
+
+##> Local Dependency
+##> Global Dependency
+> Create/Build/Generate/Test
+
+///////////********///////////
+Step to install local packages
+//////////********////////////
+> navigate to the folder where you want to install package using cmd/terminal
+> npm i <packagename>/ npm install <packagename>
+
+
+///////////********///////////
+Step to install global packages
+//////////********////////////
+
+#Win
+> Run cmd as admin
+> npm i -g create-react-app
+
+#Mac/Linux
+> Open terminal
+> sudo npm i -g create-react-app
+
+
+///////////********///////////
+Step to Create React App
+//////////********////////////
+
+#Win 
+(One Time)
+> Run cmd as admin
+> npm i -g create-react-app
+
+(Next Every timee you want new app)
+> navigate to the folder where you want to create app using cmd/terminal
+> create-react-app firstapp
+
+
+#Mac/Linux
+(One Time)
+> Open terminal
+> sudo npm i -g create-react-app
+
+(Next Every timee you want new app)
+> navigate to the folder where you want to create app using cmd/terminal
+> create-react-app firstapp
+
+npm 
+npx
+yarn
+
+> Hooks
+///////Component////////
+Functional      |       Classbase           
+Dumb Component          Logical Component
+Display Component       Logical Component
+Statless                Statfull
+It cannot State         it Can Maintain
+Lightin weight          Heavy as compare to Functional
+
+State> Local Varibale
+Props> help to transport State
+
+State A    ==Props==>   State B
+
+>
+
+
+
+function add(){
+    var out = [a,b]
+
+    return out
+}
+
+
+////Target Element/////
+TagName
+Id
+Class
+
+//
+map in JavaScript
+filter in JavaScript
+indexOf in JavaScript
+
+> 
+var a = ['ss','dd','ff']
+a.map((data) => { return data})
+
+var age = [12,34,23,18,21]
+age.filter((data) => {return data>18})
+
+age.map((data) => {return data>18})
+
+var age = [12,34,23,18,21]
+age.filter((data) => {return data>18})
+(3) [34, 23, 21]
+age.map((data) => {return data>18})
+(5) [false, true, true, false, true]
+age.map((data) => {return data*2})
+(5) [24, 68, 46, 36, 42]
+
+var a = [0,1,2,3,4,5]
+a.filter((data) => {return data*2})
+a.map((data) => {return data*2})
+
+var a = [0,1,2,3,4,5]
+a.filter((data) => {return data*2})
+(5) [1, 2, 3, 4, 5]
+a.map((data) => {return data*2})
+(6) [0, 2, 4, 6, 8, 10]
+
+var a = [0, 2, 4, 6, 8, 10]
+undefined
+a.indexOf(1)
+-1
+a.indexOf(3)
+-1
+a.indexOf(2)
+1
+a.indexOf(10)
+5
+
+
+npm i react-router-dom
+
+/////MockApi//////
+npm i -g json-server
+
+json-server --watch db.json --port 8900
+
+
+
+useState
+useEffect
+context
+
+
+Redux   React-Redux 
+
+mapStateToProps  => Help to recieve updated state from store
+mapDispatchToProps  => Will help to call action(disptach)
+
+container will handle redux call
+component will help to display
+
+npm i redux react-redux redux-promise prop-types react-slick react-router-dom
+
+
+get 
+post 
+put
+patch delete
+
+npm i apollo-boost graphql graphql-tag react-apollo
+
+
+/******GetAllUser*****/
+(GET)> http://localhost:5000/api/auth/users
+
+/******Register*****/
+(POST)> http://localhost:5000/api/auth/register
+(body) => {"name":"Aakash", "email":"aa@gmail.com","password":"12345678","role":"user?"}
+
+
+/******Login*****/
+(POST) => http://localhost:5000/api/auth/login
+(body)  => {"email":"aa@gmail.com","password":"12345678"}
+(response)=> {auth:true,token:'dgsdg'}
+
+/******UserInfo*****/
+(GET) => http://localhost:5000/api/auth/userinfo
+(Header) => {'x-access-token':'token value from login'}
+(response) => {userinfo}
+
+////
+GitHub
+//////
+>>>>>>First<<<<<<<<<<<
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/mytest.git
+git push -u origin master
+
+>>>>>>All Next<<<<<<<<<<<
+git add .
+git commit -m "first commit"
+git push 
+
+
+git checkout -b myfeature
+
+//////////////Production////////////////////////////
+npm run build
+
+npm i -g create-react-native-app
+npm i -g expo-cli
+create-react-native-app mymobi
+
+
+expo (app)
+
+
+npm i react-test-renderer enzyme enzyme-adapter-react-16  react-addons-test-utils
+
+generator function
+
+
+docker build . -t reactapp
+docker run -p 6700:3000 reactapp
+docker image ls
+
+
+nginx.conf
+server {
+        listen       8081;
+        server_name  localhost;
+
+        location / {
+	    root   /var/www/react-app;
+            index  index.html index.htm;
+        }
+    }
